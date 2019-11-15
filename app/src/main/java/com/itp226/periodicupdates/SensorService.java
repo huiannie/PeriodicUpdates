@@ -46,7 +46,7 @@ public class SensorService extends Service {
         }
         // send new broadcast to restart the service
         // when this service is destroyed.
-        Intent broadcastIntent = new Intent("RestartReceiverIntent");
+        Intent broadcastIntent = new Intent("com.itp226.periodicupdates.RestartReceiverIntent");
         sendBroadcast(broadcastIntent);
     }
 
@@ -65,7 +65,7 @@ public class SensorService extends Service {
                 // TODO replace the current simple task with data access
                 Log.i(" Timer ", " counter = "+ (counter++));
                 if (counter%4==0) {
-                    Intent broadcastIntent = new Intent("AlertReceiverIntent");
+                    Intent broadcastIntent = new Intent("com.itp226.periodicupdates.AlertReceiverIntent");
                     sendBroadcast(broadcastIntent);
                 }
             }
