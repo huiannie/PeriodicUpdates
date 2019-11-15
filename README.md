@@ -14,3 +14,7 @@ This receiver catches any alert broadcast from the SensorService. When such an a
 
 ### RestartReceiver
 This receiver catches any restart broadcast from the SensorService. When such an alert is received, this receiver verify the setting in the SharedPreference. If the setting is ON, the service is restarted. Otherwise, the request is ignored. 
+
+## Screenshots
+
+<img src="gallery/PeriodicUpdates-screenshot2-on.png" width="300"> <img src="gallery/PeriodicUpdates-screenshot3-notification.png" width="300">
